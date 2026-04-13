@@ -1,6 +1,6 @@
 package Classes;
 
-public class chickenBurguer implements Hambuguer {
+public class chickenBurguer implements Hamburguer {
     private formaCozinhar forma;
 
     public chickenBurguer(formaCozinhar forma) {

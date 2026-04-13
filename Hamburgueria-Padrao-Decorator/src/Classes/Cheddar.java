@@ -2,7 +2,7 @@ package Classes;
 
 public class Cheddar extends decoradorHamburguer{
 
-    public Cheddar(Hambuguer hamburguer) {
+    public Cheddar(Hamburguer hamburguer) {
         super(hamburguer);
     }
 

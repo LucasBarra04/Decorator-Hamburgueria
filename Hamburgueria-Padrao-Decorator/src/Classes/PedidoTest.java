@@ -16,7 +16,7 @@ class PedidoTest {
     @Test
     @Order(1)
     void testBeefMalPassadoComCheddarEPicles() {
-        Hambuguer h01 = fabrica.criarHamburguer("Beef", new malPassado());
+        Hamburguer h01 = fabrica.criarHamburguer("Beef", new malPassado());
         h01 = new Cheddar(h01);
         h01 = new Picles(h01);
 
@@ -29,7 +29,7 @@ class PedidoTest {
     @Test
     @Order(2)
     void testChickenNoPontoComCheddar() {
-        Hambuguer h02 = fabrica.criarHamburguer("Chicken", new noPonto());
+        Hamburguer h02 = fabrica.criarHamburguer("Chicken", new noPonto());
         h02 = new Cheddar(h02);
 
         assertEquals(26.00, h02.getCusto());
@@ -41,7 +41,7 @@ class PedidoTest {
     @Test
     @Order(3)
     void testBeefBemPassadoSemAdicionais() {
-        Hambuguer h03 = fabrica.criarHamburguer("Beef", new bemPassado());
+        Hamburguer h03 = fabrica.criarHamburguer("Beef", new bemPassado());
 
         assertEquals(32.00, h03.getCusto());
         assertEquals("Hambúrguer de Carne Bovina (Bife bem passado)", h03.getDescricao());

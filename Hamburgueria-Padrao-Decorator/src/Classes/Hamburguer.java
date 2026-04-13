@@ -1,6 +1,6 @@
 package Classes;
 
-public interface Hambuguer {
+public interface Hamburguer {
     String getDescricao();
     double getCusto();
 }

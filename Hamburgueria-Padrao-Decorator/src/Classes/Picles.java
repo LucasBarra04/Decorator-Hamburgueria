@@ -2,7 +2,7 @@ package Classes;
 
 public class Picles extends decoradorHamburguer{
 
-    public Picles(Hambuguer hamburguer) {
+    public Picles(Hamburguer hamburguer) {
         super(hamburguer);
     }
 

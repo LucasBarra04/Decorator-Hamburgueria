@@ -1,10 +1,10 @@
 package Classes;
 
-public abstract class decoradorHamburguer implements Hambuguer{
-    protected Hambuguer hamburguerDecorado;
+public abstract class decoradorHamburguer implements Hamburguer {
+    protected Hamburguer hamburguerDecorado;
 
-    public decoradorHamburguer(Hambuguer hambuguer) {
-        this.hamburguerDecorado = hambuguer;
+    public decoradorHamburguer(Hamburguer hamburguer) {
+        this.hamburguerDecorado = hamburguer;
     }
 
     @Override

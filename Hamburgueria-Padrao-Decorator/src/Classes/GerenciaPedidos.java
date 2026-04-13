@@ -14,10 +14,10 @@ public class GerenciaPedidos {
         return gerenciaPedidos;
     }
 
-    public String registroPedidos(Hambuguer hambuguer) {
+    public String registroPedidos(Hamburguer hamburguer) {
         ContarPedidos++;
-        ReceitaTotal += hambuguer.getCusto();
-        return "Pedido: " + ContarPedidos + " | " + hambuguer.getDescricao() + " | " + hambuguer.getCusto();
+        ReceitaTotal += hamburguer.getCusto();
+        return "Pedido: " + ContarPedidos + " | " + hamburguer.getDescricao() + " | " + hamburguer.getCusto();
     }
 
     public String relatorioPedidos() {
