@@ -1,17 +1,39 @@
 package Classes;
 
-public class Pedido {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pedido implements Observable {
 
     private EstadoPedido estado;
     private Hamburguer hamburguer;
+    private List<Observer> observers = new ArrayList<>();
 
     public Pedido(Hamburguer hamburguer) {
         this.hamburguer = hamburguer;
         this.estado = EstadoPedidoPagamentoPendente.getInstance();
     }
 
+    @Override
+    public void adicionarObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    @Override
+    public void removerObserver(Observer observer) {
+        observers.remove(observer);
+    }
+
+    @Override
+    public void notificarObservers(String evento, String descricao) {
+        for (Observer o : observers) {
+            o.update(evento, descricao);
+        }
+    }
+
     public void setEstado(EstadoPedido estado) {
         this.estado = estado;
+        notificarObservers("Estado alterado", estado.getEstado());
     }
 
     public String getEstado() {
