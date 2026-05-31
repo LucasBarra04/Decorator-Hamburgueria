@@ -1,7 +1,9 @@
 package Classes;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-public class HistoricoCliente {
+
+public class HistoricoCliente implements Iterable<PedidoCompleto> {
     private PedidoEstado estadoAtual;
     private PedidoCompleto pedidoAtual;
     private List<PedidoEstado>   memento       = new ArrayList<>();
@@ -24,8 +26,14 @@ public class HistoricoCliente {
         this.pedidoAtual = pedidosSalvos.get(indice - 1);
     }
 
-    public PedidoEstado getEstadoAtual()          { return estadoAtual; }
-    public PedidoCompleto getPedidoAtual()         { return pedidoAtual; }
-    public List<PedidoEstado> getMemento()         { return memento; }
+    @Override
+    public Iterator<PedidoCompleto> iterator() {
+        return pedidosSalvos.iterator();
+    }
+
+    public int getTotalPedidos()               { return pedidosSalvos.size(); }
+    public PedidoEstado getEstadoAtual()       { return estadoAtual; }
+    public PedidoCompleto getPedidoAtual()     { return pedidoAtual; }
+    public List<PedidoEstado> getMemento()     { return memento; }
     public List<PedidoCompleto> getPedidosSalvos() { return pedidosSalvos; }
 }
