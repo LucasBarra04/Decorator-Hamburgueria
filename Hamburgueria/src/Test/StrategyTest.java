@@ -1,4 +1,8 @@
-package Classes;
+package Test;
+import Classes.CalculadoraEntrega;
+import Classes.EntregaEconomica;
+import Classes.EntregaExpressa;
+import Classes.EntregaRetirada;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

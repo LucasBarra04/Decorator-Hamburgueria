@@ -1,4 +1,8 @@
-package Classes;
+package Test;
+import Classes.ClienteSAC;
+import Classes.CozinhaSAC;
+import Classes.EntregadorSAC;
+import Classes.SAC;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,7 @@
-package Classes;
+package Test;
+import Classes.CardapioFly;
+import Classes.Ingrediente;
+import Classes.IngredienteFactory;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
