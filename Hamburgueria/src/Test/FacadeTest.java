@@ -1,5 +1,9 @@
 package Test;
-import Classes.*;
+import Classes.MontagemHamburguer.*;
+import Classes.PagamentoEFechamento.CozinhaSetor;
+import Classes.PagamentoEFechamento.EstoqueSetor;
+import Classes.PagamentoEFechamento.HamburgeriaFacade;
+import Classes.PagamentoEFechamento.PagamentoSetor;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

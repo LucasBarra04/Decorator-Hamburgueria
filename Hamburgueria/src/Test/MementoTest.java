@@ -1,5 +1,9 @@
 package Test;
-import Classes.*;
+import Classes.HistoricoEPosVenda.HistoricoCliente;
+import Classes.HistoricoEPosVenda.PedidoEstadoAberto;
+import Classes.HistoricoEPosVenda.PedidoEstadoCancelado;
+import Classes.HistoricoEPosVenda.PedidoEstadoFinalizado;
+import Classes.MontagemHamburguer.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,8 +1,8 @@
 package Test;
-import Classes.ClienteSAC;
-import Classes.CozinhaSAC;
-import Classes.EntregadorSAC;
-import Classes.SAC;
+import Classes.PagamentoEFechamento.ClienteSAC;
+import Classes.PagamentoEFechamento.CozinhaSAC;
+import Classes.PagamentoEFechamento.EntregadorSAC;
+import Classes.PagamentoEFechamento.SAC;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

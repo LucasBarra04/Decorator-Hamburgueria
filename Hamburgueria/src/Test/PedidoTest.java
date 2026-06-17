@@ -1,6 +1,7 @@
 package Test;
 
-import Classes.*;
+import Classes.MontagemHamburguer.*;
+import Classes.PagamentoEFechamento.GerenciaPedidos;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;

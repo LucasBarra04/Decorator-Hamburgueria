@@ -1,6 +1,9 @@
 package Test;
 
-import Classes.*;
+import Classes.AtendimentoEFrete.AtendimentoDelivery;
+import Classes.AtendimentoEFrete.AtendimentoRetirada;
+import Classes.AtendimentoEFrete.TipoAtendimento;
+import Classes.MontagemHamburguer.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

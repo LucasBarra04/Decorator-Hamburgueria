@@ -1,7 +1,7 @@
 package Test;
-import Classes.CardapioFly;
-import Classes.Ingrediente;
-import Classes.IngredienteFactory;
+import Classes.HistoricoEPosVenda.CardapioFly;
+import Classes.HistoricoEPosVenda.Ingrediente;
+import Classes.HistoricoEPosVenda.IngredienteFactory;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,6 +1,7 @@
 package Test;
 
-import Classes.*;
+import Classes.FilaCozinhaECicloPedido.Pedido;
+import Classes.MontagemHamburguer.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
