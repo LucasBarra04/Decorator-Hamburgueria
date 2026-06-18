@@ -11,7 +11,7 @@ public class CozinhaObserver implements Observer {
     @Override
     public void update(String evento, String descricao) {
         this.ultimaNotificacao = "[Cozinha - " + setor + "] " + evento + ": " + descricao;
-        System.out.println(ultimaNotificacao);
+
     }
 
     public String getUltimaNotificacao() {

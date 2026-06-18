@@ -7,7 +7,7 @@ public class DadosPedido implements IDadosPedido {
 
     public DadosPedido(PedidoCompleto pedido) {
         this.pedido = pedido;
-        System.out.println("DadosPedido: carregando dados sensíveis do pedido...");
+
     }
 
     @Override

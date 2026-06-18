@@ -20,7 +20,7 @@ public class EstadoPedidoTransporte extends EstadoPedido {
 
     @Override
     public void entregar(Pedido pedido) {
-        System.out.println("Pedido entregue ao cliente!");
+
         pedido.setEstado(EstadoPedidoEntregue.getInstance());
     }
 }

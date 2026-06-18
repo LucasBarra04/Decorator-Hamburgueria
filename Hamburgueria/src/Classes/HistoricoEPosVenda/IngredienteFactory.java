@@ -7,7 +7,7 @@ public class IngredienteFactory {
     public static Ingrediente getIngrediente(String nome, String descricao, double custo) {
         if (!ingredientes.containsKey(nome)) {
             ingredientes.put(nome, new Ingrediente(nome, descricao, custo));
-            System.out.println("Novo ingrediente criado: " + nome);
+
         }
         return ingredientes.get(nome);
     }

@@ -20,13 +20,13 @@ public class EstadoPedidoPreparo extends EstadoPedido {
 
     @Override
     public void transportar(Pedido pedido) {
-        System.out.println("Pedido saiu para entrega!");
+
         pedido.setEstado(EstadoPedidoTransporte.getInstance());
     }
 
     @Override
     public void cancelar(Pedido pedido) {
-        System.out.println("Pedido cancelado a partir de Em Preparo.");
+
         pedido.setEstado(EstadoPedidoCancelado.getInstance());
     }
 }

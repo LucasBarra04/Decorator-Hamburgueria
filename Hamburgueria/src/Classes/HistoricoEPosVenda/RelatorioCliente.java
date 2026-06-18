@@ -30,9 +30,7 @@ public class RelatorioCliente {
         int i = 1;
         while (it.hasNext()) {
             PedidoCompleto p = it.next();
-            System.out.println(i++ + ". " + p.getNomeCliente()
-                    + " | " + p.getHamburguer().getDescricao()
-                    + " | R$" + p.getCustoTotal());
+
         }
     }
 }

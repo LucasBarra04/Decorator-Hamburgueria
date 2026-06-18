@@ -8,7 +8,7 @@ public class EntregadorSAC extends ParticipanteSAC {
     @Override public String getNome() { return nome; }
     @Override public void receberMensagem(String mensagem, String remetente) {
         this.ultimaMensagem = "[" + remetente + "] " + mensagem;
-        System.out.println(ultimaMensagem);
+
     }
     public String getUltimaMensagem() { return ultimaMensagem; }
 }

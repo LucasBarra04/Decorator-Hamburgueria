@@ -11,7 +11,7 @@ public class ClienteObserver implements Observer {
     @Override
     public void update(String evento, String descricao) {
         this.ultimaNotificacao = "[Cliente " + nome + "] " + evento + ": " + descricao;
-        System.out.println(ultimaNotificacao);
+
     }
 
     public String getUltimaNotificacao() {

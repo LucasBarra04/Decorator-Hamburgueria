@@ -18,7 +18,7 @@ public class PriorizarPedidoComando implements ComandoCozinha {
     public void cancelar() {
         if (fila.getPedidosNaFila().remove(pedido)) {
             fila.getPedidosNaFila().add(pedido);
-            System.out.println("Priorização de " + pedido.getNomeCliente() + " desfeita.");
+
         }
     }
 }

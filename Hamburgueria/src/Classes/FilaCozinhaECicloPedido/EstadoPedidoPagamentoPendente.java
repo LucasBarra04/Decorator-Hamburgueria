@@ -20,13 +20,13 @@ public class EstadoPedidoPagamentoPendente extends EstadoPedido {
 
     @Override
     public void aprovar(Pedido pedido) {
-        System.out.println("Pagamento aprovado! Pedido avançando para Aprovado.");
+
         pedido.setEstado(EstadoPedidoAprovado.getInstance());
     }
 
     @Override
     public void cancelar(Pedido pedido) {
-        System.out.println("Pedido cancelado a partir de Pagamento Pendente.");
+
         pedido.setEstado(EstadoPedidoCancelado.getInstance());
     }
 }

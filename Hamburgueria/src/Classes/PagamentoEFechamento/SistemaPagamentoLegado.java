@@ -7,7 +7,7 @@ public class SistemaPagamentoLegado {
     public void debitarValor(String descricao, double quantia) {
         this.codigoTransacao    = "TXN-" + (int)(quantia * 100);
         this.transacaoAprovada  = quantia > 0;
-        System.out.println("Legado: debitando R$" + quantia + " — " + descricao);
+
     }
 
     public String getCodigoTransacao()   { return codigoTransacao; }
