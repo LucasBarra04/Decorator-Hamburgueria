@@ -5,7 +5,7 @@ import Classes.HistoricoEPosVenda.IngredienteFactory;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class FlyweightTest {
+class CompartilhamentoIngredientesTest {
 
     @Test
     void mesmosIngredientesDevemCompartilharInstancia() {

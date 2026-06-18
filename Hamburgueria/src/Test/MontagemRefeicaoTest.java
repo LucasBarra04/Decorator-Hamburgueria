@@ -4,7 +4,7 @@ import Classes.MontagemHamburguer.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class AbstractFactoryTest {
+class MontagemRefeicaoTest {
 
     @Test
     void refeicaoClassicaDeveConterHamburguer() {

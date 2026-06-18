@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class MediatorTest {
+class ComunicacaoAtendimentoSACTest {
     private SAC sac;
     private ClienteSAC cliente;
     private CozinhaSAC cozinha;

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CommandTest {
+class FilaPreparoCozinhaTest {
 
     private FilaPreparoPedidos fila;
     private FilaCozinha filaCozinha;

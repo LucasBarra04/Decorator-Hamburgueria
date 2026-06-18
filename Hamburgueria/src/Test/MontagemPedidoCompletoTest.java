@@ -4,7 +4,7 @@ import Classes.MontagemHamburguer.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class BuilderTest {
+class MontagemPedidoCompletoTest {
 
     private Hamburguer criarBeefComCheddar() {
         Hamburguer h = new BeefBurguer(new bemPassado());

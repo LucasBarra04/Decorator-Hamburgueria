@@ -2,34 +2,35 @@ package Test;
 
 import Classes.FilaCozinhaECicloPedido.Pedido;
 import Classes.MontagemHamburguer.*;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class PedidoStateTest {
+class CicloVidaPedidoTest {
 
-    private Pedido criarPedido() {
+    private Pedido pedido;
+
+    @BeforeEach
+    void setUp() {
         fabricaHamburguer fabrica = new fabricaHamburguerGourmet();
         Hamburguer h = fabrica.criarHamburguer("Beef", new malPassado());
         h = new Cheddar(h);
-        return new Pedido(h);
+        pedido = new Pedido(h);
     }
 
     @Test
     void pedidoDeveIniciarComPagamentoPendente() {
-        Pedido pedido = criarPedido();
         assertEquals("Pagamento Pendente", pedido.getEstado());
     }
 
     @Test
     void aprovacaoDeveAvancarParaAprovado() {
-        Pedido pedido = criarPedido();
         pedido.aprovar();
         assertEquals("Aprovado", pedido.getEstado());
     }
 
     @Test
     void fluxoCompletoDeveChgarEmEntregue() {
-        Pedido pedido = criarPedido();
         pedido.aprovar();
         pedido.preparar();
         pedido.transportar();
@@ -39,14 +40,12 @@ class PedidoStateTest {
 
     @Test
     void cancelamentoEmPagamentoPendenteDeveIrParaCancelado() {
-        Pedido pedido = criarPedido();
         pedido.cancelar();
         assertEquals("Cancelado", pedido.getEstado());
     }
 
     @Test
     void cancelamentoEmAprovadoDeveIrParaCancelado() {
-        Pedido pedido = criarPedido();
         pedido.aprovar();
         pedido.cancelar();
         assertEquals("Cancelado", pedido.getEstado());
@@ -54,7 +53,6 @@ class PedidoStateTest {
 
     @Test
     void cancelamentoEmPreparoDeveIrParaCancelado() {
-        Pedido pedido = criarPedido();
         pedido.aprovar();
         pedido.preparar();
         pedido.cancelar();
@@ -63,19 +61,17 @@ class PedidoStateTest {
 
     @Test
     void acaoInvalidaNaoDeveAvancarEstado() {
-        Pedido pedido = criarPedido();
-        pedido.entregar(); // inválido em PagamentoPendente
+        pedido.entregar();
         assertEquals("Pagamento Pendente", pedido.getEstado());
     }
 
     @Test
     void estadoEntregueNaoDeveAceitarMaisAcoes() {
-        Pedido pedido = criarPedido();
         pedido.aprovar();
         pedido.preparar();
         pedido.transportar();
         pedido.entregar();
-        pedido.cancelar(); // inválido em Entregue
+        pedido.cancelar();
         assertEquals("Entregue", pedido.getEstado());
     }
 }

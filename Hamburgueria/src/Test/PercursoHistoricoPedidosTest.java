@@ -7,7 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class IteratorTest {
+class PercursoHistoricoPedidosTest {
 
     private HistoricoCliente historico;
     private PedidoCompleto p1, p2, p3;
